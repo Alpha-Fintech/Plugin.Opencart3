@@ -1,12 +1,12 @@
 <?php
 // Heading
-$_['heading_title']      = 'Share Commerce Payment';
+$_['heading_title']      = 'SC Payments';
 
 // Text 
 $_['text_payment']       = 'Payment';
-$_['text_success']       = 'Success: You have modified Share Commerce account details!';
+$_['text_success']       = 'Success: You have modified SC Payments account details!';
 $_['text_edit']          = 'Edit Account';
-$_['text_scpay']         = '<a href="https://www.share-commerce.com/" target="_blank"><img src="https://sharecommerce-pg.oss-ap-southeast-3.aliyuncs.com/share-commerce-logo.png" alt="ShareCommerce" title="Share Commerce Payment" style="border: 1px solid #EEEEEE;width:150px" /></a>';
+$_['text_scpay']         = '<a href="https://www.scpayments.com.my/" target="_blank"><img src="https://scpayment-oss-ap-southeast-3.scpayments.com.my/logo/scpayment-logo.png" alt="SCPayments" title="SC Payments" style="border: 1px solid #EEEEEE;width:150px" /></a>';
 $_['text_test']			 = 'Test';
 $_['text_live']           = 'Live';
       
@@ -27,10 +27,10 @@ $_['entry_sort_order']   = 'Sort Order';
 $_['entry_hashtype'] = 'Hash';
 
 // Help
-$_['help_password']      = 'This can be get from Share Commerce.';
+$_['help_password']      = 'This can be get from SC Payments.';
 $_['help_total']         = 'The checkout total the order must reach before this payment method becomes active.';
 
 // Error
-$_['error_permission']   = 'Warning: You do not have permission to modify payment Share Commerce Payment!';
+$_['error_permission']   = 'Warning: You do not have permission to modify payment SC Payments!';
 $_['error_merchant']     = 'MerchantId Required!';
 $_['error_password']     = 'SecretKet Required!';

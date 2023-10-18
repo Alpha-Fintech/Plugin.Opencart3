@@ -52,9 +52,9 @@ class ControllerExtensionPaymentSCPay extends Controller {
         }
 
 		if ($this->config->get('payment_scpay_environment')=='test'){
-			$data['action'] = 'https://staging.payment.share-commerce.com/payment'; 
+			$data['action'] = 'https://stagingpayment.scpayments.com.my/payment'; 
 		}else{
-			$data['action'] = 'https://payment.share-commerce.com/payment';
+			$data['action'] = 'https://payment.scpayments.com.my/payment';
 		}
 
 		if (file_exists(DIR_TEMPLATE . $this->config->get('theme_default_directory') . '/template/extension/payment/scpay.twig')) {
@@ -115,7 +115,7 @@ class ControllerExtensionPaymentSCPay extends Controller {
 
                         if ($order['order_status_id'] == '1' || $order['order_status_id'] == '2' || $order['order_status_id'] == '0') { // check order is pending or proccessing
                             
-							$message = "Payment successfully made through Share Commerce Payment, Transaction Reference " . $var['TxnRefNo'];
+							$message = "Payment successfully made through SC Payments, Transaction Reference " . $var['TxnRefNo'];
 							$this->model_checkout_order->addOrderHistory($order_id, $this->config->get('payment_scpay_success_status_id'), $message, true);
 
 							echo "OK";
@@ -186,7 +186,7 @@ class ControllerExtensionPaymentSCPay extends Controller {
 
                         if ($order['order_status_id'] == '1' || $order['order_status_id'] == '2' || $order['order_status_id'] == '0') { // check order is pending or proccessing
                             
-							$message = "Payment successfully made through Share Commerce Payment, Transaction Reference " . $var['TxnRefNo'];
+							$message = "Payment successfully made through SC Payments, Transaction Reference " . $var['TxnRefNo'];
 							$this->model_checkout_order->addOrderHistory($order_id, $this->config->get('payment_scpay_success_status_id'), $message, true);
 
 							$this->response->redirect($this->url->link('checkout/success', '', $this->isSSL()));

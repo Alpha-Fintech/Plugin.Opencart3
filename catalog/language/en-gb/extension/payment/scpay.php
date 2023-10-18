@@ -3,4 +3,4 @@
 $_['heading_title']     = 'Thank you for shopping with %s .... ';
 
 // Text
-$_['text_title']        = 'Share Commerce Payment';
+$_['text_title']        = 'SC Payments';
